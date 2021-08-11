@@ -4,29 +4,26 @@ header {
     min-height: 400px;
     padding-top: 3em;
 }
-#home header {
-    width: 100%;
-    background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+#home {
+    background:  no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
 }
 
-#cliffs header {
-    background:  no-repeat lightgrey url(images/forest_cliff.jpg);
-    background-size: 1500px;
+#cliffs {
+    background:  no-repeat white url(images/forest_cliff.jpg);
+    background-size: 100% 400px;
 }
-#activities header {
-    background:  no-repeat lightgrey url(images/runfly.jpg);
-    background-size: 1500px;
+#activities {
+    background:  no-repeat white url(images/runfly.jpg);
+    background-size: 100% 400px;
 }
-#contact header {
-    background:  no-repeat lightgrey url(images/cliff_rock.jpg);
-    background-size: 1500px;
+#contact {
+    background:  no-repeat white url(images/cliff_rock.jpg);
+    background-size: 100% 400px;
 }
 
 .main-header {
-    background-color:rgb(255, 255, 255, 0.8) ;
+    background-color:rgba(38, 41, 61, 0.7);
     width: 700px;
     margin: 2em auto 0 auto;
     min-height: 100px;
@@ -58,7 +55,7 @@ header {
 }
 .main-menu ul li a {
     text-decoration: none;
-    color: #888 !important;
+    color:#fff !important;
 }
 .main-menu ul li a:hover {
     color: #9ed034;
@@ -90,6 +87,7 @@ main h2 {
     font-size: 1.7em;
 }
 
+
 /* Partners */
 section {
     width: 100%;
@@ -113,34 +111,46 @@ section #partners .partner img {
 }
 
 
-/* Home */
-#home #timeofday {
-    height: 2.8em;
-    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
-    text-align: center;
-    padding-top: 1.2em;
-    color: #3a3a3a;
-    font-family:Arial, Helvetica, sans-serif;
-}
-#home #timeofday #clock {
-    font-weight:400;
-    color: #125688;
-}
 
 /* Cliffs */
-#cliffs main .cliffs {
+/*Page4 Styling*/
+#cliffs h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9ed034;
+    width: 1200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 50px;
+}
+
+#cliffs h2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 50px;
+}
+
+#cliffs p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+    padding: 2% 5% 1% 5%;
+    margin-left: 50px;
+}
+
+.cliffcliffs {
     background: none;
     width: 90%;
     margin: 0 auto;
 }
 
-#cliffs main .cliffs .site {
+.cliffcliffs .site {
     width: 45%;
     display: inline-block;
     margin: 2.5em 1.2em 0 1.2em;
 }
 
-#cliffs main .cliffs .site h3 {
+.cliffcliffs .site h3 {
     background: #852B1B;
     height: 2em;
     color: #fff;
@@ -149,50 +159,125 @@ section #partners .partner img {
     margin: 0;
 }
 
-#cliffs main .cliffs .site img {
+.cliffcliffs .site img {
     width: 100%;
     height: auto;
 }
 
-/* Activities */
-table {
+/*Page 2 Styling*/
+table{
     width: 1000px;
-    margin: 4em auto 0 auto;
+    margin: 5% 0 5% 10%;
+}
+#activities h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9ed034;
+    width: 1200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 50px;
 }
 
-caption {
-    background: #852B1B;
+#activities p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+    padding: 2% 5% 1% 5%;
+    margin-left: 50px;
+}
+
+caption{
+    background: #852b1b;
     height: 40px;
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1,3em;
     font-weight: bold;
     padding-top: 1em;
 }
-thead {
-    background: #BDE1FF;
-}
-tbody {
-    background: #EEFFE6;
+
+thead{
+    background: #bde1ff;
     text-align: center;
 }
-th,td {
+
+tbody{
+    background: #eeffe6;
+    text-align: center;
+}
+
+td,th{
     width: 225px;
     height: 75px;
     vertical-align: middle;
-    border: solid 1px #852B1B;
-}
-th:first-child {
-    width: 125px;
-    height: 50px;
-    background: #4977D1;
-    color: #fff;
-}
-td:first-child {
-    font-weight: bold;
-    background: #BDE1FF
+    border: solid 1px #852b1b;
 }
 
+th:first-child{
+    width: 125px;
+    height: 50px;
+    background: #4977d1;
+    color: #fff;
+}
+
+td:first-child{
+    font-weight: bold;
+    background: #bde1ff;
+}
+
+.tdclick{
+    background: #04af46;
+    color: #fff;
+}
+
+.tdbox:hover:hover{
+    cursor: pointer;
+}
+
+#activities #displaySelected{
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+
+#activities #displaySelected #result, #activities #displaySelected #sendinfo{
+    display: block;
+    margin: 0;
+}
+
+#activities #result{
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+
+#activities #redult h4{
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+#activities #displaySelected #sendinfo input[type="email"]{
+    width: 200px;
+}
+
+
 /* Contact Page */
+#contact h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9ed034;
+    width: 1200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 50px;
+}
+
+#contact p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+    padding: 2% 5% 1% 5%;
+    margin-left: 50px;
+}
+
 .contactinfo {
     margin: 2em 0 1em 0;
 }
@@ -264,9 +349,9 @@ form .button {
     text-align: right;
 }
 
-form .button input {
-    width: 8em;
-    height: 2.5em;
+#submit {
+    width: 5em;
+    height: 2em;
     font-size: 1.2em;
     font-weight: bold;
     /*background-color: rgb(73, 119, 209, 0.4);*/
@@ -335,7 +420,7 @@ footer #nondisclaimer .social .fa-instagram {
     }
     .main-menu {
         width: 200px;
-        background-color:rgb(255, 255, 255);
+        background-color:rgba(38, 41, 61, 0.7);
         position: absolute;
         /* right: 1.7em; */
         margin-left: 30em;
@@ -353,7 +438,7 @@ footer #nondisclaimer .social .fa-instagram {
         margin-top: 1em;
       }
       .nav-item{
-        background-color: #fff;
+        background-color: rgba(38, 41, 61, 0.7);
         height: 80px;
         text-align: center;
     }
@@ -389,7 +474,8 @@ footer #nondisclaimer .social .fa-instagram {
 
 
 .navbar-custom {
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgba(38, 41, 61, 0.7);
     background-color: transparent;
 }
+
 
