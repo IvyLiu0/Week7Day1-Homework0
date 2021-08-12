@@ -1,8 +1,7 @@
 /* Header */
 header {
     width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
+    min-height: 275px;
 }
 #home {
     background:  no-repeat white url(images/cliff_ocean.jpg);
@@ -176,6 +175,7 @@ table{
     padding-left: 5%;
     padding-right: 5%;
     margin-left: 50px;
+    margin-top: 100px;
 }
 
 #activities p{
